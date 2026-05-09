@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Icons Gallery</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ae6e9b; /* Dark sleek background */
+            color: #e9e3e3;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Grid Container */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* Profile Card */
+        .card {
+            background: rgba(207, 169, 169, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(56, 189, 248, 0.5);
+        }
+
+        .image-box {
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .image-box img {
+            transform: scale(1.1);
+        }
+
+        /* Content Info */
+        .info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: #38bdf8;
+        }
+
+        .info p {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            font-style: italic;
+        }
+
+        /* Badge/Tag Styles */
+        .badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #818cf8;
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+   <div style="border: skyblue 5px solid; width: 222px;" ><a href="index.html" style="font-family: Consolas; text-decoration: none;">home</a>
+   <a href="kopasri.html" style="font-family: Consolas; text-decoration: none;">king</a>
+   <a href="Sak.html" style="font-family: Consolas; text-decoration: none;">ZinTwo</a>
+   <a href="text.html" style="font-family: Consolas; text-decoration: none;">Konkhmer</a></div>
+
+    <h1>Global Icons</h1>
+
+    <div class="gallery-container">
+
+        <div class="card">
+            <div class="badge">Athlete</div>
+            <div class="image-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/LeBron_James_%2851959977144%29_%28cropped2%29.jpg" alt="LeBron James">
+            </div>
+            <div class="info">
+                <h2>LeBron James</h2>
+                <p>The King of Basketball</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="badge">Streamer</div>
+            <div class="image-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStQvAhEXXn1LuKKR0oTRMHQ0qGhK6wqtVgy8MFseLDUMhrf1YYl2I_1vpVJA8djDjygFvRMwbrOXc9stRdFsG_iVp1sZHYBSgoujlo5dukPxhq0Y-1zNeWyoUvLHtNTg&s=10&ec=121644734" alt="IShowSpeed">
+            </div>
+            <div class="info">
+                <h2>IShowSpeed</h2>
+                <p>Digital Entertainment Person</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="badge">Politics</div>
+            <div class="image-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/960px-Donald_Trump_official_portrait.jpg" alt="Donald Trump">
+            </div>
+            <div class="info">
+                <h2>Donald Trump</h2>
+                <p>45th & 47th US President</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="badge">Tech</div>
+            <div class="image-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7l0FO6rvBvfooyPnpLPtPN32Vche4fC7BzQ&s" alt="Elon Musk">
+            </div>
+            <div class="info">
+                <h2>Elon Musk</h2>
+                <p>CEO of Tesla & SpaceX</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
